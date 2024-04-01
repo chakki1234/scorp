@@ -6,18 +6,17 @@ import Typography from '@mui/material/Typography';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import './components.css'
+import '../css/components.css'
 
 export default function NavBar() {
+  let navBarOptions = ['Reserve', 'Menus', 'Gift Cards', 'Our Story', 'Hours & Location', 'Contact', 'Join Our Team'];
+
   return (
       <Grid container direction={'column'} alignItems="center">
-        <img item src={logo} style={{ width: '75%', paddingTop: '18px' }} />  
+        <img item src={logo} className='navBar-logo' />  
         
         <Divider item orientation="horizontal" variant="middle" 
-          sx={{
-            marginTop: '20px',
-            marginBottom: '20px'
-          }}
+          className='navBar-divider'
           flexItem />
 
         <Typography item variant="address" sx={{width: '50%'}} align='center'>
@@ -26,48 +25,17 @@ export default function NavBar() {
         </Typography>
 
         <Divider item orientation="horizontal" variant="middle" 
-          sx={{
-            marginTop: '20px',
-            marginBottom: '20px'
-          }}
+          className='navBar-divider'
           flexItem />
           
-        <List>
-          <ListItem sx={{justifyContent: 'center'}} className='navbar-options'>
-            <Typography item variant="navBarOptions">
-              Reserve
-            </Typography>
-          </ListItem>
-          <ListItem sx={{justifyContent: 'center'}} className='navbar-options'>
-            <Typography item variant="navBarOptions">
-              Menus
-            </Typography>
-          </ListItem>
-          <ListItem sx={{justifyContent: 'center'}} className='navbar-options'>
-            <Typography item variant="navBarOptions">
-              Gift Cards
-            </Typography>
-          </ListItem>
-          <ListItem sx={{justifyContent: 'center'}} className='navbar-options'>
-            <Typography item variant="navBarOptions">
-              Our Story
-            </Typography>
-          </ListItem>
-          <ListItem sx={{justifyContent: 'center'}} className='navbar-options'>
-            <Typography item variant="navBarOptions">
-              Hours & Location
-            </Typography>
-          </ListItem>
-          <ListItem sx={{justifyContent: 'center'}} className='navbar-options'>
-            <Typography item variant="navBarOptions">
-              Contact
-            </Typography>
-          </ListItem>
-          <ListItem sx={{justifyContent: 'center'}} className='navbar-options'>
-            <Typography item variant="navBarOptions">
-              Join Our Team
-            </Typography>
-          </ListItem>
+        <List item>
+          {navBarOptions.map((option, index) => (
+            <ListItem key={index} className='navbar-options'>
+              <Typography className='navbar-option-link' align='center' variant="navBarOptions">
+                {option}
+              </Typography>
+            </ListItem>
+          ))}
         </List>
 
         <InstagramIcon item className='navBar-insta-icon'/>

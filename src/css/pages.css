@@ -1,0 +1,10 @@
+/* Landing page */
+
+.navbar{
+    height: 100vh !important;
+}
+
+.content-area{
+    height: 100vh !important;
+    overflow: scroll !important;
+}

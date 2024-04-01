@@ -1,0 +1,26 @@
+/* Navbar CSS */
+.navBar-logo{
+    width: 75% !important;
+    padding-top: 18px !important;
+}
+
+.navBar-divider{
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.navbar-options{
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    justify-content: center !important; 
+}
+
+.navBar-insta-icon{
+    margin-top: 100px !important;
+    fill: #7a413b !important;
+}
+
+.navbar-option-link:hover {
+    color: #222422 !important;
+    cursor: pointer;
+}
