@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/scorp/static/css/main.316354bf.css",
+    "main.js": "/scorp/static/js/main.348d086f.js",
+    "static/js/453.4940f746.chunk.js": "/scorp/static/js/453.4940f746.chunk.js",
+    "static/media/sampleLogo.png": "/scorp/static/media/sampleLogo.d9db1da12a428526f2b1.png",
+    "index.html": "/scorp/index.html",
+    "main.316354bf.css.map": "/scorp/static/css/main.316354bf.css.map",
+    "main.348d086f.js.map": "/scorp/static/js/main.348d086f.js.map",
+    "453.4940f746.chunk.js.map": "/scorp/static/js/453.4940f746.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.316354bf.css",
+    "static/js/main.348d086f.js"
+  ]
+}
